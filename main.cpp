@@ -14,7 +14,7 @@ int main() {
     printf("Now you can use some basic command like 'ls'.\n");
     printf("put 'help' to get more command\n");
 
-    vector<string> q;
+    //vector<string> q;
     while (1) {
         printf(">>>");
         char buff[128] = {0};
@@ -70,9 +70,9 @@ int main() {
             //printf("%s", myargv[2]);
             mychmod(3, myargv);
         } else if (strcmp(myargv[0], "history") == 0) {
-            for (int i = 0; i < q.size(); i++) {
+           /* for (int i = 0; i < q.size(); i++) {
                 cout << q[i] << endl;
-            }
+            }*/
         } else {
             printf("Wrong Command\n");
         }
