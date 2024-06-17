@@ -16,6 +16,7 @@ int main() {
 
     //vector<string> q;
     while (1) {
+		
         printf(">>>");
         char buff[128] = {0};
         fgets(buff, 128, stdin);
@@ -32,7 +33,7 @@ int main() {
             myargv[i++] = s;
         }
         q.push_back(myargv[0]);
-
+		vector<string> q;
         if (strcmp(myargv[0], "help") == 0) {
             help();
         } else if (strcmp(myargv[0], "ls") == 0) {
@@ -70,9 +71,9 @@ int main() {
             //printf("%s", myargv[2]);
             mychmod(3, myargv);
         } else if (strcmp(myargv[0], "history") == 0) {
-           /* for (int i = 0; i < q.size(); i++) {
+          for (int i = 0; i < q.size(); i++) {
                 cout << q[i] << endl;
-            }*/
+            }
         } else {
             printf("Wrong Command\n");
         }
