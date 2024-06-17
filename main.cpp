@@ -7,7 +7,7 @@
 
 using namespace std;
 #define MAX 128
-
+//
 
 int main() {
     printf("Welcome to Mybash.\n");

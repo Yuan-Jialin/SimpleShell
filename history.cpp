@@ -6,7 +6,7 @@
 #include "string"
 
 using namespace std;
-
+//
 vector<string>v;
 
 void add(string command){
